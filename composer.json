@@ -1,0 +1,32 @@
+{
+    "name": "tigereng/files",
+    "description": "TigerWeb Brands module",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Arif Settarov",
+            "email": "arif.settarov@mail.ru"
+        }
+    ],
+    "require": {
+        "php": ">=7.4.0"
+		"intervention/image":"*"
+    },
+    "scripts": {
+        "post-install-cmd": [
+            "bash post_install.sh"
+        ],
+        "post-package-install": [
+            "bash post_install.sh"
+        ],
+        "post-root-package-install": [
+            "bash post_install.sh"
+        ]
+    },
+    "autoload": {
+        "psr-4": {
+            "Tigereng/Files\\" : "src/Repository/"
+        }
+    }
+}
